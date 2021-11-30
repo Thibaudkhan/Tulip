@@ -4,7 +4,7 @@
 
 <br>
 
-####Il suffit de lancer le script index.js, il y a déjà des valeurs dans les tableaux.
+Il suffit de lancer le script index.js, il y a déjà des valeurs dans les tableaux.
 
 
 ````html
