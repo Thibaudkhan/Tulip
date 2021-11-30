@@ -19,9 +19,9 @@ const printGender = (number)=>{
 const diffDays = (otherDate) => Math.ceil(Math.abs(new Date(new Date().getFullYear(), 0, 2) - otherDate) / (1000 * 60 * 60 * 24));
 
 /*
-* Exercice 2 Pour chaque date n dans une liste, on veut avoir ces résultats affichés en fonction des dates de la liste
+** Exercice 2 Pour chaque date n dans une liste, on veut avoir ces résultats affichés en fonction des dates de la liste
 * En argument une date
-* Cette fonction permet de faire les 4 résultats attendu dans l'exercicie 1
+** Cette fonction permet de faire les 4 résultats attendu dans l'exercicie 1
  */
 const formatDate = (previousDate)=>{
     let newDate = new Date(previousDate);
@@ -39,8 +39,8 @@ const formatDate = (previousDate)=>{
 }
 
 /*
-* Le fait de ne pas faire de fonciton fleché me permet d'appeler la fonction avant.
-* Return une Date random pour remplir le tableau de date (non demandé mais me permet de tester plus facilement)
+** Le fait de ne pas faire de fonciton fleché me permet d'appeler la fonction avant.
+** Return une Date random pour remplir le tableau de date (non demandé mais me permet de tester plus facilement)
 */
 function randomDate() {
     const start = new Date(2020, 0, 1) ;
@@ -50,5 +50,5 @@ function randomDate() {
 
 
 // Print le resultat
-console.log(number.map(printGender))
-console.log(arrayOfDate.map(formatDate))
+console.table(number.map(printGender))
+console.table(arrayOfDate.map(formatDate))
